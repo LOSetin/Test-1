@@ -1,0 +1,7 @@
+错误地址：http://localhost:61955/Site/Order.aspx?LineID=10&GroupID=0&PromotionID=0
+错误信息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Order.BindBuyNum() 位置 f:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Site\Order.aspx.cs:行号 20
+   在 Order.OnInit(EventArgs e) 位置 f:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Site\Order.aspx.cs:行号 44
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+出错时间：2018/5/28 8:40:12

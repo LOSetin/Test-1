@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function ChangeLeftBar() {
+            if (window.parent.document.getElementById("frameMain").cols == '200,8,*') {
+                window.parent.document.getElementById("frameMain").cols = '0,8,*';
+                document.getElementById("img").src = "../Resources/img/right_arrow.png";
+            }
+            else {
+                window.parent.document.getElementById("frameMain").cols = '200,8,*';
+                document.getElementById("img").src = "../Resources/img/left_arrow.png";
+            }
+        }
+    </script>
+</head>
+<body style=" background-color:#000000; margin:0;padding:0;"  >
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" >
+<tr><td style="cursor:pointer; vertical-align:middle; text-align:center;"  align="center"  onclick="ChangeLeftBar()" ><img id="img" src="../Resources/img/left_arrow.png" style="border:0; text-align:center;" /></td></tr>
+</table>
+</body>
+</html>

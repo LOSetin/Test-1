@@ -1,0 +1,7 @@
+D:\Web\TMS\Data\bin\Debug\Data.dll
+D:\Web\TMS\Data\bin\Debug\Data.pdb
+D:\Web\TMS\Data\bin\Debug\Arrow.Framework.dll
+D:\Web\TMS\Data\bin\Debug\Arrow.Framework.pdb
+D:\Web\TMS\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Web\TMS\Data\obj\Debug\Data.dll
+D:\Web\TMS\Data\obj\Debug\Data.pdb

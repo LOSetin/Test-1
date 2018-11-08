@@ -1,0 +1,3 @@
+D:\Web\ArrowFramework\Framework\bin\Release\Arrow.Framework.dll
+D:\Web\ArrowFramework\Framework\bin\Release\Oracle.ManagedDataAccess.dll
+D:\Web\ArrowFramework\Framework\obj\Release\Arrow.Framework.dll

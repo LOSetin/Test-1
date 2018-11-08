@@ -1,0 +1,112 @@
+﻿/*我的订单页*/
+.ordertitle,.ordernum{font-size:12px;
+	color:#333333;
+	border-width: 0;
+	border-color: #e0dfdf;
+	border-collapse: collapse;
+}
+
+.ordertitle th,.ordernum th {
+	border-width: 0;
+	padding: 5px 0px;
+	border-style: solid;
+	border-color: #dedede;
+	background-color: #dedede;
+    font-weight:normal;
+}
+
+.ordertitle th{text-align:center;}
+
+.ordernum th{text-align:left; }
+.ordernum span.title{ color:#999999}
+.ordernum span{color:#333;}
+
+.orderitem {
+	font-size:12px;
+	color:#333333;
+}
+.orderitem tr
+{
+    border:solid 1px #e0dfdf;
+}
+
+.orderitem td {
+	font-size:12px;
+	padding: 5px 0px;
+	background-color: #ffffff;
+    text-align:center;
+    color:#999999;
+}
+.orderitem td.bd
+{
+    border-right:solid 1px #e0dfdf;
+}
+
+.orderitem td a,.orderitem td a:visited
+{
+    color:#333333;
+    line-height:16px;
+}
+.orderitem td a:hover
+{color:#cc0000;
+ text-decoration:underline;
+}
+
+.orderitem p.mygodate{
+    text-align:left;
+   color:#425670;
+   font-weight:normal;
+   font-size:12px;
+}
+
+.orderitem td a.button
+{
+    display:inline-block;
+    padding:5px 10px 5px 10px;
+    border:solid 1px #ccc;
+}
+.orderitem td a:hover.button
+{
+    display:inline-block;
+    color:#ff6a00;
+    text-decoration:underline;
+}
+/*end我的订单页*/
+
+.NotShowPage{display:none;}
+
+/*编辑参团人*/
+.gridview {
+	font-size:14px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #e0dfdf;
+	border-collapse: collapse;
+	text-align:center;
+}
+.gridview th {
+	border-width: 1px;
+	padding: 5px 2px;
+	border-style: solid;
+	border-color: #e0dfdf;
+	background-color:#F3F3F3;
+	text-align:center;
+}
+.gridview td {
+	font-size:12px;
+	border-width: 1px;
+	color:#666666;
+	padding: 8px;
+	border-style: solid;
+	border-color: #e0dfdf;
+	background-color: #ffffff;
+}
+.gridview a,.gridview visited{color:#333;}
+.gridview a:hover{color:#ff0000; text-decoration:underline;}
+
+.gridview input[type="text"]{border:1px solid #e1e1e1;height:26px;line-height:26px;padding-left:4px;padding-right:4px;width:220px;}
+.actionbutton input[type="button"]{cursor:pointer;margin:0 4px;}
+/*end编辑参团人*/
+
+#jsMsg{ background-color:#d8f5cd; border:1px solid #bed8ab; padding:10px; text-align:center; font-weight:bold;font-size:14px; color:#333; display:none; margin-top:10px; }
+

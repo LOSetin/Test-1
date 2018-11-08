@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs"  Inherits="SiteMaster" EnableViewState="false" %>
+
+<%@ Register Src="~/CommonTop.ascx" TagPrefix="uc1" TagName="CommonTop" %>
+<%@ Register Src="~/CommonFooter.ascx" TagPrefix="uc1" TagName="CommonFooter" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <asp:ContentPlaceHolder id="header" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+  <!--header-start-->
+    <div class="header">
+
+        <uc1:CommonTop runat="server" ID="CommonTop" />
+            <div class="container">
+            <div class="cnt clearfix">
+            	<div class="logo"><a href="Default.aspx"><img src="images/logo.jpg"  alt=""></a></div>
+                <div class="box_search">
+               <form class="searchform" method="post" action="UrlRouter.aspx?type=Search">
+                        <div class="search">
+                            <div class="all-product">
+                                <span class="search-category" data-val="1">旅游线路</span>
+                            </div>
+                             <input type="text" class="search-input" value="" placeholder="请输入您要搜索的关键字" id="keywords" name="keywords" />
+                            <input type="submit" value="" class="search-btn submit-search">
+                        </div>
+                        <p class="hot_search"><%=UIHelper.ShowHotWords() %></p>
+                    </form>
+                </div>
+                
+                
+            </div>
+            <div class="bot">
+            	<div class="hot_mdd">
+                	<div class="head">
+                    	热门旅游目的地
+                    </div>
+                    <div class="body">
+                    	<dl>
+                    	<%=ShowCat() %>
+                    	</dl>
+                    </div>
+                </div>
+                <ul class="nav clearfix">
+                	<li><a href="Default.aspx">首页</a></li>
+                	<li><a href="Line.aspx">旅游线路</a></li>
+                	<li><a href="Promotion.aspx">促销商品</a></li>
+                	<li><a href="Mall.aspx">积分商城</a></li>
+                	<li><a href="PicWall.aspx">图片墙</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--header-end-->
+        <asp:ContentPlaceHolder id="mainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ <!--footer-start-->
+    <uc1:CommonFooter runat="server" ID="CommonFooter" />
+    <!--footer-end-->
+    
+
+<asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
+

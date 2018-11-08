@@ -1,0 +1,245 @@
+﻿html,body{
+    height:100%;
+ }
+body {
+    font-family:宋体,Verdana;
+    font-size:12px;
+    width:100%;
+    color:#333333;
+    margin:0;
+    padding:0; 
+}
+ul li {
+    list-style:none;
+    margin:0;
+    padding:0;
+ }
+.clearfix:after {
+content: "";
+display: block;
+height: 0;
+clear: both;
+}
+
+.clearfix {
+zoom: 1;
+}
+
+.hide{display:none;}
+
+#RightTop {  width:100%; height:66px; background-image:url(../img/right_topbg.png); background-repeat:repeat-x;  }
+#Nav { width:100%;  text-indent:20px; height:66px; line-height:64px; font-size:20px; font-weight:bold;}
+.subNav{ font-size:12px; font-weight:normal; }
+.subNav a,.subNav a:visited{ color:#2763c2; }
+.subNav a:hover{ color:red; }
+.Edit { padding-left:150px; margin-top:20px; }
+.Info { background:url(../img/info.png) no-repeat #e8f6ff ;background-position:5px center;  border:solid 1px #c9dcea; color:#333;  margin:0 auto; line-height:18px; padding:12px 10px 10px 30px; }
+/*.Info { background:url(../img/info.png) no-repeat #ddf0f9 ;background-position:5px center;  border:solid 1px #91c1d9; color:#333;  margin:0 auto; line-height:18px; padding:12px 10px 10px 30px; }*/
+
+.Warning { background:url(../img/warning.png) no-repeat #fef5cc; background-position:5px center;  border:solid 1px #e7dcae; color:#333; margin:0 auto; line-height:18px; padding:12px 10px 10px 30px; }
+.Error { background:url(../img/error.png) no-repeat #ffd1d1; background-position:5px center;  border:solid 1px #e2b4b6; color:#333; margin:0 auto; line-height:18px; padding:12px 10px 10px 30px; }
+.Success { background:url(../img/success.png) no-repeat #eaf7d9; background-position:5px center;  border:solid 1px #c7d3af; color:#333; margin:0 auto; line-height:18px; padding:12px 10px 10px 30px; }
+
+.Line { background-color: #ebeff2; height: 2px; font-size:0; width: 100%; margin-top:20px; margin-bottom:20px; }
+
+.red{color:#ff0000;}
+.bold{ font-weight:bold; }
+.subTitle{ color:red;font-weight:bold;font-size:16px; }
+
+.btnPrime{ width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_Yellow.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer;}
+.btnAdd { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_add.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer; text-indent:10px; }
+.btnBlue { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_blue.png); border:0; background-repeat:no-repeat; color:#ffffff; cursor:pointer; }
+.btnGreen { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_green.png); border:0; background-repeat:no-repeat; color:#ffffff; cursor:pointer; }
+.btnGray { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_gray.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer; }
+.btnYellow { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_Yellow.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer; }
+.btnLightBlue { width:80px; font-size:12px; height:25px; line-height:25px; text-align:center; padding:0;  background-image:url(../img/btnLightBlue.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer; }
+.btnItemCurrent { width:81px; height:19px; line-height:19px; text-align:center; background-image:url(../img/btn_item_button.png); border:0; background-repeat:no-repeat; color:#ffffff; cursor:pointer; }
+.btnItemWait { width:81px; height:19px; line-height:19px; text-align:center; background-color:#fff;  border:0; color:#333; cursor:pointer; }
+.textbox { border: solid 1px #7d9cb9; height:20px; }
+.btnOther { padding: 2px; width:45px; height: 21px; font-size: 12px;border:1px solid #aaa; cursor:pointer }
+
+.DetailHeader { padding-bottom:10px; font-size:14px; font-weight:bold; text-indent:2px; }
+.DetailTable {width:90%; border:solid 1px #e6f4fd; padding:0;border-collapse:collapse; }
+.DetailRowLeft {width:100px; text-align:right; background-color:#f7fbfe; line-height:25px; border-right:solid 1px #e6f4fd; border-bottom:solid 1px #e6f4fd }
+.DetailRowRight {border-bottom:solid 1px #e6f4fd }
+.DetailInfo { padding-bottom:10px; font-size:12px; text-indent:2px; }
+
+img{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+}
+
+a,a:visited{
+    color:#000000;
+    text-decoration:none;
+}
+a:hover{
+    color:#FF0000;
+    text-decoration:underline;
+}
+
+ 
+/*高度*/
+.H5{height:5px;}
+.H10{height:10px; }
+.H15{height:15px;}
+.H20{height:20px;}
+.H25{height:25px;}
+.H30{height:30px;}
+
+/*EditForm*/
+.EditForm td { height: 25px; }
+.EditForm .txt { width: 100px; text-align: right; padding-right: 3px; font-weight: normal; white-space: nowrap; }
+.EditForm_textbox { width:250px; border: solid 1px #ccc; }
+.EditForm_red { color: #ff0000; }
+.EditForm_text { color:#666666; }
+
+/*EditFormLogin*/
+.EditFormLogin td { height: 30px; }
+.EditFormLogin .txt { width: 80px; text-align: right; padding-right: 3px; font-weight: normal; white-space: nowrap; }
+
+/*gridview*/
+.gridview
+{
+    margin:0 auto;
+    padding:0;
+    border-bottom:solid 1px #eeeeee;
+    color:#333333;
+}
+.gridview a,.gridview a:visited
+{
+    color:#2763c2;
+    text-decoration:none;
+}
+.gridview a:hover
+{
+    color:#ff0000;
+    text-decoration:none;
+}
+
+.gridview td 
+{
+    border-bottom:solid 1px #eeeeee;
+    text-align:center;
+    vertical-align:middle;
+    height:25px;
+}
+
+.gridview th
+{
+    height:30px;
+    line-height:30px;
+    color:#333;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    background-image:url(../img/grid_top_bg.png);
+    background-repeat:repeat-x;
+    padding:0px 2px 0px 2px;
+}
+
+.gridpage table
+{
+    margin:0 auto;
+    text-align:center;
+    width:10px;
+}
+.gridpage table td
+{
+    border:0;
+    text-align:left;
+}
+.gridpage span
+{
+    padding:2px 5px;
+    margin:0px 2px;
+    background-color:#eeeeee;
+    color:#333333;
+    
+}
+.gridpage a
+{
+    padding:2px 5px;
+    margin:0px 2px;
+    color:#2763c2;
+}
+
+/*ArrowGridViewPage*/
+.gvPage
+    {
+        width:95%;
+        margin:0 auto;
+        padding:5px 0px;
+        height:25px;
+        line-height:25px;
+        font-size:12px;
+        font-family:宋体;
+        text-align:center;
+        border-bottom:1px solid #eeeeee;
+    }
+    .gvPage a,.gvPage a:visited
+    {
+        text-decoration:none;
+        color:#0A5BAA;
+        margin:3px;
+    }
+    .gvPage a span,.gvPage a:visited span
+    {
+        padding-left:2px;
+        padding-right:2px;
+        color:#0A5BAA;
+    }
+    .gvPage .Current
+    {
+        color:#ff0000;
+        font-weight:bold;
+        padding-left:2px;
+        padding-right:2px;
+    }
+    .gvPage .Tips
+    {
+        margin-right:10px;
+        color:#333333;
+    }
+
+    .GridViewItem { text-align:left; }
+
+    /* TreeListView */
+.treelistview
+{
+    margin:0 auto;
+    padding:0;
+    border-bottom:solid 1px #eeeeee;
+    color:#333333;
+}
+.treelistview a,.treelistview a:visited
+{
+    color:#2763c2;
+    text-decoration:none;
+}
+.treelistview a:hover
+{
+    color:#ff0000;
+    text-decoration:none;
+}
+
+.treelistview td 
+{
+    border-bottom:solid 1px #eeeeee;
+    vertical-align:middle;
+    height:25px;
+}
+
+.treelistview th
+{
+    height:30px;
+    line-height:30px;
+    color:#333;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    background-image:url(../img/grid_top_bg.png);
+    background-repeat:repeat-x;
+}
+.treelistcolumn { padding-left:20px; }

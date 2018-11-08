@@ -1,0 +1,59 @@
+﻿.calendar_custom_v2 .ui-datepicker{width:100%;background-color:#fff;border-radius:4px;padding: 0;border:solid 1px #e1e1e1; }
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-header{position:relative;height:35px;background-color:#fff;border:0 none;line-height:35px;border-radius:0 !important}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-header .ui-datepicker-prev{position:absolute;left:0}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-header .ui-datepicker-next{position:absolute;right:0}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-header .ui-datepicker-next{width:10%;height:35px;line-height:35px;cursor:pointer}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-title{line-height:35px;text-align:center;height:35px;color:#666;font-weight:100}
+.calendar_custom_v2 .ui-datepicker select.ui-datepicker-month-year{width:100%}
+.calendar_custom_v2 .ui-datepicker select.ui-datepicker-month,
+.calendar_custom_v2 .ui-datepicker select.ui-datepicker-year{width:49%}
+.calendar_custom_v2 .ui-datepicker table{width:100%;border-collapse:collapse;margin: 0}
+.calendar_custom_v2 .ui-datepicker table .ui-datepicker-today a{color:#c00;font-weight:700}
+.calendar_custom_v2 .ui-datepicker th{background-color:#fff;color:#666;padding:8px 5px;text-align:center;font-weight:100;border-bottom:solid 1px #e1e1e1;}
+.calendar_custom_v2 .ui-datepicker td{background-color:#fff;color:#666;font-size:12px;padding:0;text-align:center;width:14%;opacity:1!important;filter: Alpha(Opacity=100);line-height:30px;}
+.calendar_custom_v2 .ui-datepicker td a{color:#333;text-decoration:none;text-align:center;display: block;}
+.calendar_custom_v2 .ui-datepicker td p{margin:0;line-height:14px}
+.calendar_custom_v2 .ui-datepicker td .tipsT{color:#f80}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-buttonpane{background-image:none;margin:.7em 0 0 0;padding:0 .2em;border-left:0;border-right:0;border-bottom:0}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-buttonpane button{float:right;margin:.5em .2em .4em;cursor:pointer;padding:.2em .6em .3em .6em;width:auto;overflow:visible}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{float:left}
+.calendar_custom_v2 .ui-datepicker.ui-datepicker-multi{width:auto}
+.calendar_custom_v2 .ui-datepicker-multi .ui-datepicker-group{float:left}
+.calendar_custom_v2 .ui-datepicker-multi .ui-datepicker-group table{width:95%;margin:0 auto .4em}
+.calendar_custom_v2 .ui-datepicker-multi-2 .ui-datepicker-group{width:50%}
+.calendar_custom_v2 .ui-datepicker-multi-3 .ui-datepicker-group{width:33.3%}
+.calendar_custom_v2 .ui-datepicker-multi-4 .ui-datepicker-group{width:25%}
+.calendar_custom_v2 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header{border-left-width:0}
+.calendar_custom_v2 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header{border-left-width:0}
+.calendar_custom_v2 .ui-datepicker-multi .ui-datepicker-buttonpane{clear:left}
+.calendar_custom_v2 .ui-datepicker-row-break{clear:both;width:100%;font-size:0}
+.calendar_custom_v2 .ui-datepicker-cover{display:none;display:block;position:absolute;z-index:-1;filter:mask();top:-4px;left:-4px;width:200px;height:200px}
+.calendar_custom_v2 .ui-state-default, 
+.calendar_custom_v2 .ui-widget-content .ui-state-default, 
+.calendar_custom_v2 .ui-widget-header .ui-state-default{background:none;border:none 0;text-align:center}
+.calendar_custom_v2 .ui-state-hover,
+.calendar_custom_v2 .ui-widget-content .ui-state-hover,
+.calendar_custom_v2 .ui-widget-header .ui-state-hover,
+.calendar_custom_v2 .ui-state-focus,
+.calendar_custom_v2 .ui-widget-content .ui-state-focus,
+.calendar_custom_v2 .ui-widget-header .ui-state-focus{border:none 0;background:#fff;font-weight:normal;color:#212121}
+.calendar_custom_v2 .ui-icon{text-indent:0;width:auto;height:auto}
+.calendar_custom_v2 .ui-icon-circle-triangle-w,
+.calendar_custom_v2 .ui-icon-circle-triangle-e{background:none;font-weight:100;top:10px !important}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-prev-hover, 
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-next-hover{top:2px}
+.calendar_custom_v2 .calendar-price{color:#f80;cursor: pointer;}
+.calendar_custom_v2 .calendar-status{color:#815f5e}
+.calendar_custom_v2.hide{display:none}
+.calendar_custom_v2{position:absolute;display:block;width:270px;z-index: 4;background-color:#fff;border-collapse:collapse;}
+.calendar_custom_v2 .calendar-date p{width:50px;overflow:hidden;display:inline-block}
+.calendar_custom_v2 .ui-icon-circle-triangle-w{background:url("../images/daterangepicker-icon.png") no-repeat scroll 0 0 rgba(0,0,0,0);display:inline-block;height:18px;width:18px;text-indent:-100em;}
+.calendar_custom_v2 .ui-icon-circle-triangle-e{background:url("../images/daterangepicker-icon.png") no-repeat scroll -21px 0 rgba(0,0,0,0);display:inline-block;height:18px;width:18px;text-indent:-100em;}
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-prev span,
+.calendar_custom_v2 .ui-datepicker .ui-datepicker-next span{display:block;left:50%;margin-left:-9px;margin-top:0;position:absolute;top:50%;}
+.calendar_custom_v2.date-picker-wrap{width:400px}
+.calendar_custom_v2.date-picker-wrap .ui-datepicker td{line-height:15px;height:40px;vertical-align:top;border-left:solid 1px #e1e1e1;border-top:solid 1px #e1e1e1}
+.calendar_custom_v2.date-picker-dialog{width:350px}
+.calendar_custom_v2.date-picker-dialog .ui-datepicker td{line-height:15px;height:35px;vertical-align:top;border:solid 1px #e1e1e1}
+.calendar_custom_v2 .ui-datepicker-unselectable span{ color:#ddd;}

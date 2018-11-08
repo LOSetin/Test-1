@@ -1,0 +1,2387 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>数据库</title>
+    <style type="text/css">
+        body, table { font-size: 14px; font-family:宋体,Verdana;}
+        div { margin: 0 auto; height: 20px; line-height: 20px; padding-top: 20px; }
+        table { table-layout: fixed; empty-cells: show; border-collapse: collapse; margin: 0 auto; }
+        td { height: 25px; }
+        h1, h2, h3 { font-size: 14x; margin: 0; padding: 0; }
+
+        table.t1 { border: 1px solid #cad9ea; color: #333; }
+        table.t1 th { background-color: #2F589C; background-repeat: repeat-x; height: 30px; color: #fff; }
+        table.t1 td, table.t1 th { border: 1px solid #cad9ea;  text-align:center; }
+        table.t1 tr.a1 { background-color: #f5fafe; }
+    </style>
+</head>
+<body><div style="width: 90%">表名：
+SiteUser</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>Name</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Pwd</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>RealName</td>
+<td>nvarchar(20)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>RoleIDs</td>
+<td>nvarchar(1000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>LastLoginTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>LastLoginIP</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>ThisLoginTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>ThisLoginIP</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>InviteNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>UserStatus</td>
+<td>nvarchar(20)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+SiteRole</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>MenuIDList</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+SiteMenu</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>StartTag</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>Url</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>ParentID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+SiteSetting</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>HotSearchWords</td>
+<td>nvarchar(2000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+SiteMember</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>UserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>UserPwd</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>RealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>HeadPicPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>Sex</td>
+<td>nvarchar(10)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>MobileNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>IDNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>Email</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>QQ</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>WeChat</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>TotalCost</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>TotalPoints</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>UsedPoints</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>InviteNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>InviterUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>InviterRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+Promotion</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>CoverPath</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>PromotionDesc</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>PromotionType</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>Discount</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>TotalPayOneTime</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>TotalPayOneTimeJoinNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>FullCutTotal</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>FullCutMinus</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>SecondKillPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>StartTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>EndTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>IsDel</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>Tag</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>20</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+PicWall</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>CoverPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>BigPicPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>SortOrder</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>IsTop</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+GoodsCat</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>IsDel</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>SortOrder</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+LineCat</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>ParentID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>IsDel</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>SortOrder</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>IsShowIndex</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>IsHotSell</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>IsHotSort</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>IsSearchWord</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>HitTimes</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+MemberFav</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>UserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>FavType</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>FavObjID</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+Line</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>FirstCatID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>SecondCatID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>ProductNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>CoverPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>BigPicPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>TravelDays</td>
+<td>nvarchar(20)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>StartAddress</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>TargetAddress</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>GoTravel</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>BackTravel</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>SignUpNotice</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>LineDesc</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>OtherNotice</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>WarmTips</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>MinPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>Tag</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>20</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>21</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>22</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>23</td>
+<td>IsDel</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>24</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>25</td>
+<td>IsTop</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>26</td>
+<td>IsHot</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>27</td>
+<td>HitTimes</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>28</td>
+<td>IsPickup</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+Goods</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>CatID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>Num</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>Points</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>CoverPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>BigPicPath</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>IsOut</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+CostHistory</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>UserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>PointsBefore</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>PointsAfter</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>PointsCost</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>GoodsID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>GoodsNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>GoodsName</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>OrderNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>MoneyCost</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>MoneyBefore</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>MoneyAfter</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>CostType</td>
+<td>nvarchar(40)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>ExchangeStatus</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>ExpressName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>ExpressNum</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>20</td>
+<td>SendTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>21</td>
+<td>FinishTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>22</td>
+<td>LinkMan</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>23</td>
+<td>LinkAddress</td>
+<td>nvarchar(2000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>24</td>
+<td>LinkPhone</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+QA</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>CatName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>QATitle</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>QAContent</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+TravelGroup</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>LineID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>Name</td>
+<td>nvarchar(200)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>TotalNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>RemainNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>JoinNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>PromotionNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>GroupNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>GoDate</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>BackDate</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>GatheringTime</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>GatheringPlace</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>TransferPlace</td>
+<td>nvarchar(2000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>GoTravel</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>BackTravel</td>
+<td>nvarchar(400)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>OuterPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>InnerPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>Deposit</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>GruopLeader</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>20</td>
+<td>TravelGuide</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>21</td>
+<td>IsDel</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>22</td>
+<td>IsPublish</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>23</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>24</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>25</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>26</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>27</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+LineDetail</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>LineID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>Title</td>
+<td>nvarchar(2000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>DayDesc</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>DayPics</td>
+<td>nvarchar(2000)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>SortOrder</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>WarmTips</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>AddUserRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+TravelOrder</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>OrderNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>OrderType</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>OrderStatus</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>GroupID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>LineID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>TotalMoney</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>MoneyPayed</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>MoneyReturn</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>BuyNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>CanChangeNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>PromotionID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>CompanyRemarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>13</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>14</td>
+<td>AddMemberName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>15</td>
+<td>AddMemberMobile</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>16</td>
+<td>AddMemberRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>17</td>
+<td>AddMemberRemarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>18</td>
+<td>InviteNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>19</td>
+<td>InviterUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>20</td>
+<td>InviterRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>21</td>
+<td>OperatorUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>22</td>
+<td>OperatorRealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>23</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>24</td>
+<td>OrderHistory</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+PromotionGroup</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>PromotionID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>GroupID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>LineID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>TotalNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>SelledNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>RemainNum</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>RawInnerPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>RawOuterPrice</td>
+<td>decimal</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>BeginTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+OrderDetail</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>OrderNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>GroupID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>LineID</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>AddMemberName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>RealName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>Sex</td>
+<td>nvarchar(10)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>IDNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>MobileNum</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>10</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>11</td>
+<td>Remarks</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>12</td>
+<td>ExtraFields</td>
+<td>nvarchar(max)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<div style="width: 90%">表名：
+Slider</div><table width="90%" border="1" class="t1">
+<thead>
+            <th width="8%">序号</th>
+           <th width="20%">字段名称</th>
+        <th width="20%">字段类型</th>
+        <th width="8%">非空</th>
+            <th width="8%">主键</th>
+        <th width="36%">说明</th>
+        </thead>
+<tr class="a1">
+<td>1</td>
+<td>ID</td>
+<td>int</td>
+<td>是</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr >
+<td>2</td>
+<td>Name</td>
+<td>nvarchar(510)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>3</td>
+<td>PicPath</td>
+<td>nvarchar(510)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>4</td>
+<td>Url</td>
+<td>nvarchar(510)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>5</td>
+<td>AddTime</td>
+<td>datetime</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>6</td>
+<td>AddUserName</td>
+<td>nvarchar(100)</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>7</td>
+<td>SortOrder</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr >
+<td>8</td>
+<td>IsTop</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="a1">
+<td>9</td>
+<td>IsShow</td>
+<td>int</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/></body></html>

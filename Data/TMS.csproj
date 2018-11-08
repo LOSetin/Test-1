@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6479A442-AB22-4EAF-A3C6-95DD621770C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMS</RootNamespace>
+    <AssemblyName>TMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auto\DataAccess\CostHistory.cs" />
+    <Compile Include="Auto\DataAccess\Goods.cs" />
+    <Compile Include="Auto\DataAccess\GoodsCat.cs" />
+    <Compile Include="Auto\DataAccess\Line.cs" />
+    <Compile Include="Auto\DataAccess\LineCat.cs" />
+    <Compile Include="Auto\DataAccess\LineDetail.cs" />
+    <Compile Include="Auto\DataAccess\MemberFav.cs" />
+    <Compile Include="Auto\DataAccess\OrderDetail.cs" />
+    <Compile Include="Auto\DataAccess\PicWall.cs" />
+    <Compile Include="Auto\DataAccess\Promotion.cs" />
+    <Compile Include="Auto\DataAccess\PromotionGroup.cs" />
+    <Compile Include="Auto\DataAccess\QA.cs" />
+    <Compile Include="Auto\DataAccess\ShopingCar.cs" />
+    <Compile Include="Auto\DataAccess\SiteMember.cs" />
+    <Compile Include="Auto\DataAccess\SiteMenu.cs" />
+    <Compile Include="Auto\DataAccess\SiteRole.cs" />
+    <Compile Include="Auto\DataAccess\SiteSetting.cs" />
+    <Compile Include="Auto\DataAccess\SiteUser.cs" />
+    <Compile Include="Auto\DataAccess\Slider.cs" />
+    <Compile Include="Auto\DataAccess\TravelGroup.cs" />
+    <Compile Include="Auto\DataAccess\TravelOrder.cs" />
+    <Compile Include="Auto\Db.cs" />
+    <Compile Include="Auto\Model\CostHistoryInfo.cs" />
+    <Compile Include="Auto\Model\GoodsCatInfo.cs" />
+    <Compile Include="Auto\Model\GoodsInfo.cs" />
+    <Compile Include="Auto\Model\LineCatInfo.cs" />
+    <Compile Include="Auto\Model\LineDetailInfo.cs" />
+    <Compile Include="Auto\Model\LineInfo.cs" />
+    <Compile Include="Auto\Model\MemberFavInfo.cs" />
+    <Compile Include="Auto\Model\OrderDetailInfo.cs" />
+    <Compile Include="Auto\Model\PicWallInfo.cs" />
+    <Compile Include="Auto\Model\PromotionGroupInfo.cs" />
+    <Compile Include="Auto\Model\PromotionInfo.cs" />
+    <Compile Include="Auto\Model\QAInfo.cs" />
+    <Compile Include="Auto\Model\ShopingCarInfo.cs" />
+    <Compile Include="Auto\Model\SiteMemberInfo.cs" />
+    <Compile Include="Auto\Model\SiteMenuInfo.cs" />
+    <Compile Include="Auto\Model\SiteRoleInfo.cs" />
+    <Compile Include="Auto\Model\SiteSettingInfo.cs" />
+    <Compile Include="Auto\Model\SiteUserInfo.cs" />
+    <Compile Include="Auto\Model\SliderInfo.cs" />
+    <Compile Include="Auto\Model\TravelGroupInfo.cs" />
+    <Compile Include="Auto\Model\TravelOrderInfo.cs" />
+    <Compile Include="Manual\SiteSettingInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_CostHistory.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_ExchangeHistory.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_Goods.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_Group_Line.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_Order.cs" />
+    <Compile Include="Auto\ViewDataAccess\V_Promotion_Group.cs" />
+    <Compile Include="Auto\View\V_CostHistoryInfo.cs" />
+    <Compile Include="Auto\View\V_ExchangeHistoryInfo.cs" />
+    <Compile Include="Auto\View\V_GoodsInfo.cs" />
+    <Compile Include="Auto\View\V_Group_LineInfo.cs" />
+    <Compile Include="Auto\View\V_OrderInfo.cs" />
+    <Compile Include="Auto\View\V_Promotion_GroupInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArrowFramework\Framework\Arrow.Framework.csproj">
+      <Project>{7ee3840a-6f24-42e2-824b-3af784ec3b6d}</Project>
+      <Name>Arrow.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Auto\Doc\database.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+D:\Web\SchoolReader\Framework\bin\Debug\Arrow.Framework.dll
+D:\Web\SchoolReader\Framework\bin\Debug\Arrow.Framework.pdb
+D:\Web\SchoolReader\Framework\obj\Debug\Arrow.Framework.dll
+D:\Web\SchoolReader\Framework\obj\Debug\Arrow.Framework.pdb
+D:\Web\SchoolReader\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
+D:\Web\ArrowFramework\Framework\bin\Debug\Arrow.Framework.dll
+D:\Web\ArrowFramework\Framework\bin\Debug\Arrow.Framework.pdb
+D:\Web\ArrowFramework\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
+D:\Web\ArrowFramework\Framework\obj\Debug\Arrow.Framework.dll
+D:\Web\ArrowFramework\Framework\obj\Debug\Arrow.Framework.pdb

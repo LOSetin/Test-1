@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MemberMaster.master.cs" Inherits="MemberMaster" %>
+
+<%@ Register Src="~/CommonTop.ascx" TagPrefix="uc1" TagName="CommonTop" %>
+<%@ Register Src="~/CommonFooter.ascx" TagPrefix="uc1" TagName="CommonFooter" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员中心</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/datepicker.calendar.css" />
+<script src="js/jquery.min.js" type="text/javascript" language="javascript" ></script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript" language="javascript" ></script>
+<script type="text/javascript" src="js/showdate.js"></script>
+<script src="js/jquery.common-1.0.js"></script> 
+<script src="js/datepicker.js"></script> 
+   
+     <asp:ContentPlaceHolder id="header" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <!--header-start-->
+    <div class="header">
+    
+        <uc1:CommonTop runat="server" ID="CommonTop" />
+
+        <div class="hy_top" >
+        <div class="hy_container">
+        	<div class="logo"><a href="Default.aspx">旅行家云平台</a></div>
+             <div class="nav clearfix">             
+                    <ul>
+                        <li><a href="Default.aspx">首页</a></li>
+                        <li><a href="Line.aspx">旅游线路</a></li>
+                        <li><a href="Promotion.aspx">促销商品</a></li>
+                        <li><a href="Mall.aspx">积分商城</a></li>
+                        <li><a href="PicWall.aspx">图片墙</a></li>
+                    </ul>
+                 </div>          
+        </div>
+    </div>
+
+    </div>
+    <!--header-end-->
+    <!--main-start-->
+      <asp:ContentPlaceHolder id="mainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <!--main-end-->
+   
+    <!--footer-start-->
+    <uc1:CommonFooter runat="server" ID="CommonFooter" />
+    <!--footer-end-->
+    
+	
+<script src="js/base.js"></script> 
+<script src="js/addons.js" type="text/javascript" language="javascript" ></script>
+    <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+ 
+</body>
+</html>

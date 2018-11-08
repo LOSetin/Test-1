@@ -1,0 +1,5 @@
+D:\Web\ArrowFramework\ICSharp\bin\Release\ICSharp.dll
+D:\Web\ArrowFramework\ICSharp\bin\Release\ICSharp.pdb
+D:\Web\ArrowFramework\ICSharp\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Web\ArrowFramework\ICSharp\obj\Release\ICSharp.dll
+D:\Web\ArrowFramework\ICSharp\obj\Release\ICSharp.pdb

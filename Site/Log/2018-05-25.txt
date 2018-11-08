@@ -1,0 +1,38 @@
+错误地址：http://localhost:61955/Site/default.aspx
+错误信息：System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 系统找不到指定的文件。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Arrow.Framework.DataAccess.Database.PrepareCommand(DbCommand cmd, DbConnection conn, DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\DataAccess\Database.cs:行号 468
+   在 Arrow.Framework.DataAccess.Database.ExecuteReader(CommandType cmdType, String cmdText, DbParameter[] commandParameters) 位置 F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\DataAccess\Database.cs:行号 257
+   在 Arrow.Framework.DataAccess.Database.ExecuteReader(String cmdText, DbParameter[] commandParameters) 位置 F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\DataAccess\Database.cs:行号 269
+   在 Arrow.Framework.DataAccess.Database.GetModel[T](Action`2 fillModel, String strSql, DbParameter[] paras, Boolean useTran, DbTransaction tran) 位置 F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\DataAccess\Database.cs:行号 76
+   在 TMS.SiteSetting.Select(Int32 iD) 位置 F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\Auto\DataAccess\SiteSetting.cs:行号 91
+   在 UIHelper.ShowHotWords() 位置 f:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Site\App_Code\Utility\UIHelper.cs:行号 123
+   在 ASP.indexmaster_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Site\IndexMaster.master:行号 33
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Control.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+出错时间：2018/5/25 19:18:31

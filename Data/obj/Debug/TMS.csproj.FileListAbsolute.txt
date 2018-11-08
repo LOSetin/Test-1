@@ -1,0 +1,16 @@
+D:\Web\TMS\Data\bin\Debug\Arrow.Framework.dll
+D:\Web\TMS\Data\bin\Debug\Arrow.Framework.pdb
+D:\Web\TMS\Data\obj\Debug\TMS.csprojResolveAssemblyReference.cache
+D:\Web\TMS\Data\bin\Debug\TMS.dll
+D:\Web\TMS\Data\bin\Debug\TMS.pdb
+D:\Web\TMS\Data\obj\Debug\TMS.dll
+D:\Web\TMS\Data\obj\Debug\TMS.pdb
+D:\Web\TMS\Data\obj\Debug\TMS.csproj.CoreCompileInputs.cache
+D:\Web\TMS\Data\obj\Debug\TMS.csproj.CopyComplete
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\bin\Debug\TMS.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\bin\Debug\TMS.pdb
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\bin\Debug\Arrow.Framework.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\bin\Debug\Arrow.Framework.pdb
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\obj\Debug\TMS.csprojResolveAssemblyReference.cache
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\obj\Debug\TMS.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\Data\obj\Debug\TMS.pdb

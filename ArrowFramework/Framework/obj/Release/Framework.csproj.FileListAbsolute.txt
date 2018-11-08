@@ -1,0 +1,5 @@
+D:\Web\ArrowFramework\Framework\bin\Release\Arrow.Framework.dll
+D:\Web\ArrowFramework\Framework\bin\Release\Arrow.Framework.pdb
+D:\Web\ArrowFramework\Framework\obj\Release\Arrow.Framework.dll
+D:\Web\ArrowFramework\Framework\obj\Release\Arrow.Framework.pdb
+D:\Web\ArrowFramework\Framework\obj\Release\Framework.csprojResolveAssemblyReference.cache

@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="SiteTest_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin-bottom: 10px; font-size:12px;">
+            <asp:Literal ID="ltUserInfo" runat="server"></asp:Literal>
+            <a href="login.aspx">登陆</a>&nbsp;&nbsp;&nbsp;<a href="reg.aspx">注册</a>&nbsp;&nbsp;&nbsp;</div>
+        <div style="text-align: center; font-size: 16px;" >
+              <a href="Default.aspx">首页</a>&nbsp;&nbsp;&nbsp;
+            <a href="Line.aspx">旅游线路</a>&nbsp;&nbsp;&nbsp;
+        <a href="promotion.aspx">促销商品</a>&nbsp;&nbsp;&nbsp;
+         <a href="mall.aspx">积分商城</a>&nbsp;&nbsp;&nbsp;  
+        <a href="photo.aspx">图片墙</a>&nbsp;&nbsp;&nbsp;
+        </div>
+        <div style="text-align:center;margin:20px 0 20px 0; font-size:20px;font-weight:bold; color:#ff0000;">
+            <asp:Literal ID="ltTitle" runat="server"></asp:Literal>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
+

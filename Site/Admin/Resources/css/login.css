@@ -1,0 +1,67 @@
+* {
+	margin:0; padding:0;
+}
+
+body {
+ position:relative;
+ height:100%;
+ background:#fff url('../img/loginbg.png') left top repeat-x;
+ font-family:Tahoma, Arial, sans-serif;
+}
+
+img {
+	border:0;
+}
+
+#container {
+	width:960px;
+	margin:0 auto;
+}
+
+#container .logo {
+	width:230px;
+	margin:250px auto 0;
+}
+
+#container #box {
+ clear:both;
+ float:none;
+ width:350px;
+ margin:40px auto 0;
+ text-align:left;
+ font-size:13px;
+}
+
+#box p {
+ clear:both;
+ float:none;
+ width:100%;
+}
+
+p.main input,.textbox {
+ border:1px solid #cccccc;
+ color:#333;
+ padding:5px;
+ width:200px;
+ margin-right:20px;
+}
+
+p.main .login,.loginbutton {
+ color:#333;
+ font-size:12px;
+ text-decoration:none;
+ border:0;
+ background:url('../img/btn_Yellow.png') no-repeat;
+ display:inline;
+ width:80px;
+ height:25px;
+}
+
+.resetbutton {
+   width:80px; font-size:12px; height:25px; line-height:25px; text-align:center;padding:0;  background-image:url(../img/btn_gray.png); border:0; background-repeat:no-repeat; color:#000000; cursor:pointer; 
+
+}
+
+.rowleft {
+    text-align:right;height:35px;
+}

@@ -1,0 +1,14 @@
+D:\Web\TMS\ArrowFramework\Framework\bin\Debug\Arrow.Framework.dll
+D:\Web\TMS\ArrowFramework\Framework\bin\Debug\Arrow.Framework.pdb
+D:\Web\TMS\ArrowFramework\Framework\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Web\TMS\ArrowFramework\Framework\obj\Debug\Arrow.Framework.dll
+D:\Web\TMS\ArrowFramework\Framework\obj\Debug\Arrow.Framework.pdb
+D:\Web\TMS\ArrowFramework\Framework\obj\Debug\Arrow.Framework.csproj.CoreCompileInputs.cache
+D:\Web\TMS\ArrowFramework\Framework\obj\Debug\Arrow.Framework.csprojResolveAssemblyReference.cache
+D:\Web\TMS\ArrowFramework\Framework\obj\Debug\Arrow.Framework.csproj.CopyComplete
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\bin\Debug\Arrow.Framework.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\bin\Debug\Arrow.Framework.pdb
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\obj\Debug\Arrow.Framework.csprojResolveAssemblyReference.cache
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\obj\Debug\Arrow.Framework.dll
+F:\ASPCase\ATouristInformationNetwork_89bdfc8f-e3b8-41ac-94fd-1f52312aa2f4\ArrowFramework\Framework\obj\Debug\Arrow.Framework.pdb

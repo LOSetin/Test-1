@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>后台管理</title>
+
+	</head>
+	<frameset rows="47px,*" cols="*"  id="frameAll" frameborder="0" framespacing="0">
+		<!--框架上部分-->
+		<frame src="Top.aspx" name="frameTop" id="frameTop" scrolling="no" noresize />
+		<!--框架右侧和左侧-->
+		<frameset cols="200,8,*"  id="frameMain" frameborder="0" framespacing="0" >
+			<!--框架左侧-->
+			<frame src="Left.aspx" name="frameLeft" id="frameLeft" scrolling="yes" style="overflow-x:hidden"  noresize />
+            <!--变换框架-->
+            <frame src="Change.htm" name="frameChange" id="frameChange" scrolling="no" noresize />
+			<!--框架右侧-->
+			<frame src="Right.aspx" name="Right" id="Right" scrolling="yes" noresize style="overflow-x:hidden" />
+		</frameset>
+	</frameset>
+	<noframes>
+		<body><h1>您的浏览器不支持框架，该升级您的浏览器了！</h1></body>
+	</noframes>
+</html>

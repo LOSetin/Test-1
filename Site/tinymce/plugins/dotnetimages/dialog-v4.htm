@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+	<title>上传图片</title>
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="uploadify/jquery.uploadify.js"></script>
+      <link href="uploadify/uploadify.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript">
+          $(document).ready(function () {
+             $("#uploader").uploadify({
+                 'swf': 'uploadify/uploadify.swf', //进度条，Uploadify里面含有
+                 'uploader': 'net/UploadHandler.ashx', //一般处理程序
+                 'cancelImg': 'uploadify/uploadify-cancel.png', //取消图片路径
+                 'folder': 'uploadFile', //上传文件夹名
+                 'buttonCursor': 'hand',
+                 'buttonText': '请选择文件',
+                 'queueID': 'fileQueue',
+                 'fileTypeExts': '*.gif; *.jpg;*.jpeg; *.png',
+                 'width': '120',
+                 'height': '25',
+                 'fileSizeLimit': '1024', //最大为1M
+                 'progressData': 'speed',
+                 'auto': true,
+                 'multi': false,
+                 'onUploadSuccess': function (file, data, response) {
+                     if (response) {
+                         var w = (!window.frameElement && window.dialogArguments) || opener || parent || top;
+                         tinymce = w.tinymce;
+                         tinymce.EditorManager.activeEditor.insertContent('<img src="' + data + '">');
+                         //关闭
+                         tinymce.EditorManager.activeEditor.windowManager.close(window);
+                         tinymce = null;
+                     } else {
+                         alert('获取文件名失败！');
+                     }
+                 },
+                 'onUploadError': function (file, errorCode, errorMsg, errorString) {
+                     alert("上传发生错误！");
+                 }
+             });
+         });
+      </script> 
+
+
+</head>
+<body>
+
+		
+		<p>
+			<input id="uploader" name="userfile" type="file"  >
+		</p>
+    <div id="fileQueue">  </div>
+
+
+</body>
+</html>
