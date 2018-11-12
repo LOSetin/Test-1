@@ -12,7 +12,7 @@ public class AdminBase : PageBase
     /// <summary>
     /// 显示错误
     /// </summary>
-    public bool ShowCustomErrorMsg
+    public override bool ShowCustomErrorMsg
     {
         get
         {
